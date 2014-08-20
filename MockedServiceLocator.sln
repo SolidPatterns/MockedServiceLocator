@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator", "MockedServiceLocator\MockedServiceLocator.csproj", "{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator.Services", "MockedServiceLocator.Services\MockedServiceLocator.Services.csproj", "{FBB81066-7653-445C-9D26-C9669612C64E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator.Tests", "MockedServiceLocator.Tests\MockedServiceLocator.Tests.csproj", "{B9727EB2-F3D2-4595-B740-04A2087584E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator.Models", "MockedServiceLocator.Models\MockedServiceLocator.Models.csproj", "{1B7EB76A-1F7B-4107-9D69-5743A1BF732C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8EB6FFD3-17F1-4D33-B27A-B0DFBC947CAF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB81066-7653-445C-9D26-C9669612C64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB81066-7653-445C-9D26-C9669612C64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB81066-7653-445C-9D26-C9669612C64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB81066-7653-445C-9D26-C9669612C64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9727EB2-F3D2-4595-B740-04A2087584E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9727EB2-F3D2-4595-B740-04A2087584E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9727EB2-F3D2-4595-B740-04A2087584E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9727EB2-F3D2-4595-B740-04A2087584E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7EB76A-1F7B-4107-9D69-5743A1BF732C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7EB76A-1F7B-4107-9D69-5743A1BF732C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7EB76A-1F7B-4107-9D69-5743A1BF732C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7EB76A-1F7B-4107-9D69-5743A1BF732C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
