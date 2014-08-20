@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using MockedServiceLocator.Core;
 using MockedServiceLocator.Models;
@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace MockedServiceLocator.Tests
 {
     [TestFixture]
-    public class CompanyServiceShould
+    public class CompanyServiceWithoutServiceLocatorInjectedShould
     {
         private List<Company> _companies;
         private Mock<ICompanyRepository> _companyRepository;
@@ -22,6 +22,7 @@ namespace MockedServiceLocator.Tests
 
             _companyRepository = new Mock<ICompanyRepository>(MockBehavior.Strict);
             _moqServiceLocator = new MoqServiceLocator();
+            IoCEngineContext.Initialize(_moqServiceLocator);
         }
 
         [Test]
@@ -29,7 +30,7 @@ namespace MockedServiceLocator.Tests
         {
             _companyRepository.Setup(x => x.ToList()).Returns(_companies);
             _moqServiceLocator.Register(_companyRepository.Object).As<ICompanyRepository>();
-            var companyService = new CompanyService(_moqServiceLocator);
+            var companyService = new CompanyServiceWithoutServiceLocatorInjected();
             var companies = companyService.GetAllCompanies().ToList();
 
             Assert.IsTrue(companies.Any());

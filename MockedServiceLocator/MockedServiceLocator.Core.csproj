@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FBB81066-7653-445C-9D26-C9669612C64E}</ProjectGuid>
+    <ProjectGuid>{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MockedServiceLocator.Services</RootNamespace>
-    <AssemblyName>MockedServiceLocator.Services</AssemblyName>
+    <RootNamespace>MockedServiceLocator.Core</RootNamespace>
+    <AssemblyName>MockedServiceLocator.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -40,22 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompanyService.cs" />
-    <Compile Include="CompanyServiceWithoutServiceLocatorInjected.cs" />
-    <Compile Include="ICompanyRepository.cs" />
-    <Compile Include="ICompanyService.cs" />
-    <Compile Include="IRepository.cs" />
+    <Compile Include="IoCEngine.cs" />
+    <Compile Include="IoCEngineContext.cs" />
+    <Compile Include="MoqServiceLocator.cs" />
+    <Compile Include="IServiceLocator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MockedServiceLocator.Models\MockedServiceLocator.Models.csproj">
-      <Project>{1B7EB76A-1F7B-4107-9D69-5743A1BF732C}</Project>
-      <Name>MockedServiceLocator.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MockedServiceLocator\MockedServiceLocator.Core.csproj">
-      <Project>{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}</Project>
-      <Name>MockedServiceLocator.Core</Name>
-    </ProjectReference>
+    <Compile Include="ServiceNotFoundException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

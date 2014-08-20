@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator", "MockedServiceLocator\MockedServiceLocator.csproj", "{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator.Core", "MockedServiceLocator\MockedServiceLocator.Core.csproj", "{1E7323D9-9C69-4603-9F3B-2C6D48BC94C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockedServiceLocator.Services", "MockedServiceLocator.Services\MockedServiceLocator.Services.csproj", "{FBB81066-7653-445C-9D26-C9669612C64E}"
 EndProject

@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MockedServiceLocator.Tests</RootNamespace>
     <AssemblyName>MockedServiceLocator.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyFactory.cs" />
     <Compile Include="CompanyServiceShould.cs" />
+    <Compile Include="CompanyServiceWithoutServiceLocatorInjectedShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,9 +65,9 @@
       <Project>{FBB81066-7653-445C-9D26-C9669612C64E}</Project>
       <Name>MockedServiceLocator.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MockedServiceLocator\MockedServiceLocator.csproj">
+    <ProjectReference Include="..\MockedServiceLocator\MockedServiceLocator.Core.csproj">
       <Project>{1e7323d9-9c69-4603-9f3b-2c6d48bc94c9}</Project>
-      <Name>MockedServiceLocator</Name>
+      <Name>MockedServiceLocator.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
